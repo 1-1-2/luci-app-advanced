@@ -1,0 +1,13 @@
+{
+  "admin/system/advanced": {
+    "title": "高级设置",
+    "order": 60,
+    "action": {
+      "type": "view",
+      "path": "advanced/settings"
+    },
+    "depends": {
+      "acl": ["luci-app-advanced"]
+    }
+  }
+}
