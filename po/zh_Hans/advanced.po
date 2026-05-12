@@ -1,0 +1,14 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: applications/luci-app-advanced/htdocs/luci-static/resources/view/advanced/settings.js:12
+msgid "高级设置"
+msgstr "高级设置"
+
+#: applications/luci-app-advanced/htdocs/luci-static/resources/view/advanced/settings.js:13
+msgid "<font color=\"Red\"><strong>配置文档是直接编辑的除非你知道自己在干什么，否则请不要轻易修改这些配置文档。配置不正确可能会导致不能开机等错误。</strong></font>"
+msgstr "<font color=\"Red\"><strong>配置文档是直接编辑的除非你知道自己在干什么，否则请不要轻易修改这些配置文档。配置不正确可能会导致不能开机等错误。</strong></font>"
+
+#: applications/luci-app-advanced/htdocs/luci-static/resources/view/advanced/settings.js:54
+msgid "文件内容加载中..."
+msgstr "文件内容加载中..."
