@@ -14,10 +14,33 @@ jobs:
       fail-fast: false
       matrix:
         include:
+          # OpenWrt 23.05 (旧稳定版，opkg/ipk)
           - arch: x86_64
-            release: 24.10.4
+            release: 23.05.6
           - arch: aarch64_generic
-            release: 24.10.4
+            release: 23.05.6
+          - arch: mipsel_24kc
+            release: 23.05.6
+          - arch: ramips_mt7621
+            release: 23.05.6
+          # OpenWrt 24.10 (当前稳定版，opkg/ipk)
+          - arch: x86_64
+            release: 24.10.6
+          - arch: aarch64_generic
+            release: 24.10.6
+          - arch: mipsel_24kc
+            release: 24.10.6
+          - arch: ramips_mt7621
+            release: 24.10.6
+          # OpenWrt 25.12 (最新稳定版，apk)
+          - arch: x86_64
+            release: 25.12.3
+          - arch: aarch64_generic
+            release: 25.12.3
+          - arch: mipsel_24kc
+            release: 25.12.3
+          - arch: ramips_mt7621
+            release: 25.12.3
 
     steps:
       - name: Checkout
@@ -30,8 +53,16 @@ jobs:
           PACKAGES: luci-app-advanced
           FEEDNAME: advanced
 
-      - name: Upload packages
+      - name: Upload packages (ipk)
+        if: ${{ matrix.release != '25.12.3' }}
         uses: actions/upload-artifact@v4
         with:
-          name: ${{ matrix.arch }}-packages
+          name: ${{ matrix.arch }}-${{ matrix.release }}-packages
           path: bin/packages/${{ matrix.arch }}/advanced/*.ipk
+
+      - name: Upload packages (apk)
+        if: ${{ matrix.release == '25.12.3' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.arch }}-${{ matrix.release }}-packages
+          path: bin/packages/${{ matrix.arch }}/advanced/*.apk
