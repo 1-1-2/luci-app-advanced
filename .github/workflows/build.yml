@@ -13,56 +13,45 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        include:
-          # OpenWrt 23.05 (旧稳定版，opkg/ipk)
-          - arch: x86_64
-            release: 23.05.6
-          - arch: aarch64_generic
-            release: 23.05.6
-          - arch: mipsel_24kc
-            release: 23.05.6
-          - arch: ramips_mt7621
-            release: 23.05.6
-          # OpenWrt 24.10 (当前稳定版，opkg/ipk)
-          - arch: x86_64
-            release: 24.10.6
-          - arch: aarch64_generic
-            release: 24.10.6
-          - arch: mipsel_24kc
-            release: 24.10.6
-          - arch: ramips_mt7621
-            release: 24.10.6
-          # OpenWrt 25.12 (最新稳定版，apk)
-          - arch: x86_64
-            release: 25.12.3
-          - arch: aarch64_generic
-            release: 25.12.3
-          - arch: mipsel_24kc
-            release: 25.12.3
-          - arch: ramips_mt7621
-            release: 25.12.3
+        arch: [x86_64, aarch64_generic, ramips-mt7621, mipsel_24kc]
+        release: [23.05.6, 24.10.6, 25.12.3]
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
+
+      - name: Set matrix variables
+        id: vars
+        run: |
+          # 设置包扩展名 (apk for 25.12.3, ipk for others)
+          if [[ "${{ matrix.release }}" == "25.12.3" ]]; then
+            echo "pkg_ext=apk" >> $GITHUB_OUTPUT
+          else
+            echo "pkg_ext=ipk" >> $GITHUB_OUTPUT
+          fi
+
+          # 设置 packages_arch (包输出目录的架构名)
+          ARCH="${{ matrix.arch }}"
+          if [[ "$ARCH" == "ramips-mt7621" || "$ARCH" == "mipsel_24kc" ]]; then
+            echo "packages_arch=mipsel_24kc" >> $GITHUB_OUTPUT
+          else
+            echo "packages_arch=$ARCH" >> $GITHUB_OUTPUT
+          fi
 
       - name: Build packages
         uses: openwrt/gh-action-sdk@main
         env:
           ARCH: ${{ matrix.arch }}-${{ matrix.release }}
           PACKAGES: luci-app-advanced
-          FEEDNAME: advanced
 
-      - name: Upload packages (ipk)
-        if: ${{ matrix.release != '25.12.3' }}
-        uses: actions/upload-artifact@v4
+      - name: Debug - List bin directory
+        if: always()
+        run: find bin/ -type f 2>/dev/null || echo "bin/ empty or not found"
+
+      - name: Upload packages
+        uses: actions/upload-artifact@v7
         with:
           name: ${{ matrix.arch }}-${{ matrix.release }}-packages
-          path: bin/packages/${{ matrix.arch }}/advanced/*.ipk
-
-      - name: Upload packages (apk)
-        if: ${{ matrix.release == '25.12.3' }}
-        uses: actions/upload-artifact@v4
-        with:
-          name: ${{ matrix.arch }}-${{ matrix.release }}-packages
-          path: bin/packages/${{ matrix.arch }}/advanced/*.apk
+          path: bin/packages/${{ steps.vars.outputs.packages_arch }}/action
+          # path: bin/packages/${{ steps.vars.outputs.packages_arch }}/action/*.${{ steps.vars.outputs.pkg_ext }}
+          if-no-files-found: warn
