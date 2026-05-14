@@ -39,16 +39,26 @@ jobs:
           fi
 
       - name: Build packages
+        id: build
         uses: openwrt/gh-action-sdk@main
         env:
           ARCH: ${{ matrix.arch }}-${{ matrix.release }}
           PACKAGES: luci-app-advanced
+
+      - name: Build packages (debug verbose)
+        if: failure()
+        uses: openwrt/gh-action-sdk@main
+        env:
+          ARCH: ${{ matrix.arch }}-${{ matrix.release }}
+          PACKAGES: luci-app-advanced
+          V: sc
 
       - name: Debug - List bin directory
         if: always()
         run: find bin/ -type f 2>/dev/null || echo "bin/ empty or not found"
 
       - name: Upload packages
+        if: success()
         uses: actions/upload-artifact@v7
         with:
           name: ${{ matrix.arch }}-${{ matrix.release }}-packages
