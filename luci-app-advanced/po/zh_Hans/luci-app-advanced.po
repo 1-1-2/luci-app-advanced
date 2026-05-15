@@ -1,0 +1,388 @@
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2026-05-15 10:00+0000\n"
+"Last-Translator: luci-app-advanced team\n"
+"Language-Team: Chinese (Simplified)\n"
+"Language: zh_Hans\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: applications/luci-app-advanced/htdocs/luci-static/resources/view/luci-app-advanced/common.js
+msgid "文件或目录不存在"
+msgstr "文件或目录不存在"
+
+msgid "权限不足，请检查 ACL 配置"
+msgstr "权限不足，请检查 ACL 配置"
+
+msgid "磁盘空间不足"
+msgstr "磁盘空间不足"
+
+msgid "连接超时，请检查 rpcd 服务状态"
+msgstr "连接超时，请检查 rpcd 服务状态"
+
+msgid "目标是目录，需要文件"
+msgstr "目标是目录，需要文件"
+
+msgid "目标是文件，需要目录"
+msgstr "目标是文件，需要目录"
+
+msgid "目录不为空"
+msgstr "目录不为空"
+
+msgid "未知错误"
+msgstr "未知错误"
+
+msgid "失败"
+msgstr "失败"
+
+msgid "确定"
+msgstr "确定"
+
+msgid "确认"
+msgstr "确认"
+
+msgid "取消"
+msgstr "取消"
+
+msgid "操作超时"
+msgstr "操作超时"
+
+#: applications/luci-app-advanced/htdocs/luci-static/resources/view/luci-app-advanced/advanced.js
+msgid "网络"
+msgstr "网络"
+
+msgid "无线"
+msgstr "无线"
+
+msgid "防火墙"
+msgstr "防火墙"
+
+msgid "DHCP"
+msgstr "DHCP"
+
+msgid "dnsmasq"
+msgstr "dnsmasq"
+
+msgid "hosts"
+msgstr "hosts"
+
+msgid "ARP绑定"
+msgstr "ARP 绑定"
+
+msgid "负载均衡"
+msgstr "负载均衡"
+
+msgid "DDNS"
+msgstr "DDNS"
+
+msgid "家长控制"
+msgstr "家长控制"
+
+msgid "定时设置"
+msgstr "定时设置"
+
+msgid "网络唤醒"
+msgstr "网络唤醒"
+
+msgid "SMARTDNS"
+msgstr "SMARTDNS"
+
+msgid "BYPASS"
+msgstr "BYPASS"
+
+msgid "openclash"
+msgstr "openclash"
+
+msgid "加载中"
+msgstr "加载中"
+
+msgid "一致"
+msgstr "一致"
+
+msgid "不一致"
+msgstr "不一致"
+
+msgid "异常"
+msgstr "异常"
+
+msgid "高级设置"
+msgstr "高级设置"
+
+msgid "注意：修改网络配置可能导致设备不可达，请确保了解所做更改的含义。"
+msgstr "注意：修改网络配置可能导致设备不可达，请确保了解所做更改的含义。"
+
+msgid "（此文件为空）"
+msgstr "（此文件为空）"
+
+msgid "无法加载文件内容"
+msgstr "无法加载文件内容"
+
+msgid "重试"
+msgstr "重试"
+
+msgid "重试加载"
+msgstr "重试加载"
+
+msgid "此文件已被外部修改，你的本地修改与外部修改可能存在冲突。保存将覆盖外部修改，重置将丢弃你的本地修改。建议先复制你的修改内容到本地，然后点击[重置]加载最新文件，再手动合并你的修改。"
+msgstr "此文件已被外部修改，你的本地修改与外部修改可能存在冲突。保存将覆盖外部修改，重置将丢弃你的本地修改。建议先复制你的修改内容到本地，然后点击[重置]加载最新文件，再手动合并你的修改。"
+
+msgid "此文件已被外部修改，点击[重置]加载最新内容"
+msgstr "此文件已被外部修改，点击[重置]加载最新内容"
+
+msgid "没有激活的标签页"
+msgstr "没有激活的标签页"
+
+msgid "找不到文本域"
+msgstr "找不到文本域"
+
+msgid "内容未变更，已跳过保存"
+msgstr "内容未变更，已跳过保存"
+
+msgid "文件不存在，无法保存"
+msgstr "文件不存在，无法保存"
+
+msgid "保存"
+msgstr "保存"
+
+msgid "保存成功。"
+msgstr "保存成功。"
+
+msgid "保存成功，无需重启。"
+msgstr "保存成功，无需重启。"
+
+msgid "保存成功，服务已重启。"
+msgstr "保存成功，服务已重启。"
+
+msgid "保存成功，但服务重启失败"
+msgstr "保存成功，但服务重启失败"
+
+msgid "保存成功，但服务重启超时或失败。"
+msgstr "保存成功，但服务重启超时或失败。"
+
+msgid "内容未变更，已跳过保存。"
+msgstr "内容未变更，已跳过保存。"
+
+msgid "确认重置"
+msgstr "确认重置"
+
+msgid "重置将丢弃所有未保存的修改，确定继续？"
+msgstr "重置将丢弃所有未保存的修改，确定继续？"
+
+msgid "已重置为服务器最新内容。"
+msgstr "已重置为服务器最新内容。"
+
+msgid "重置"
+msgstr "重置"
+
+#: applications/luci-app-advanced/htdocs/luci-static/resources/view/luci-app-advanced/fileassistant.js
+msgid "跳转"
+msgstr "跳转"
+
+msgid "新建文件夹"
+msgstr "新建文件夹"
+
+msgid "上传"
+msgstr "上传"
+
+msgid "取消上传"
+msgstr "取消上传"
+
+msgid "删除"
+msgstr "删除"
+
+msgid "重命名"
+msgstr "重命名"
+
+msgid "安装 apk"
+msgstr "安装 apk"
+
+msgid "打开/预览"
+msgstr "打开/预览"
+
+msgid "此目录为空"
+msgstr "此目录为空"
+
+msgid "名称"
+msgstr "名称"
+
+msgid "大小"
+msgstr "大小"
+
+msgid "日期"
+msgstr "日期"
+
+msgid "权限"
+msgstr "权限"
+
+msgid "返回上级目录"
+msgstr "返回上级目录"
+
+msgid "第 "
+msgstr "第 "
+
+msgid " 页"
+msgstr " 页"
+
+msgid "上一页"
+msgstr "上一页"
+
+msgid "下一页"
+msgstr "下一页"
+
+msgid "此目录包含大量文件，部分功能可能响应较慢。"
+msgstr "此目录包含大量文件，部分功能可能响应较慢。"
+
+msgid "请输入文件夹名称"
+msgstr "请输入文件夹名称"
+
+msgid "文件夹已创建"
+msgstr "文件夹已创建"
+
+msgid "成功"
+msgstr "成功"
+
+msgid "不允许上传文件到系统关键目录"
+msgstr "不允许上传文件到系统关键目录"
+
+msgid "文件过大，已跳过"
+msgstr "文件过大，已跳过"
+
+msgid "正在上传"
+msgstr "正在上传"
+
+msgid "上传成功"
+msgstr "上传成功"
+
+msgid "上传完成：成功 "
+msgstr "上传完成：成功 "
+
+msgid " 个，失败 "
+msgstr " 个，失败 "
+
+msgid " 个"
+msgstr " 个"
+
+msgid "上传已取消"
+msgstr "上传已取消"
+
+msgid "确定要删除 "
+msgstr "确定要删除 "
+
+msgid " 吗？"
+msgstr " 吗？"
+
+msgid "此操作将递归删除目录内所有内容。"
+msgstr "此操作将递归删除目录内所有内容。"
+
+msgid " 个文件/目录吗？"
+msgstr " 个文件/目录吗？"
+
+msgid "个项目"
+msgstr "个项目"
+
+msgid "确认删除"
+msgstr "确认删除"
+
+msgid "不允许删除此路径"
+msgstr "不允许删除此路径"
+
+msgid "已删除 "
+msgstr "已删除 "
+
+msgid " 个文件"
+msgstr " 个文件"
+
+msgid "删除失败"
+msgstr "删除失败"
+
+msgid "请输入新的文件名"
+msgstr "请输入新的文件名"
+
+msgid "文件名未变更"
+msgstr "文件名未变更"
+
+msgid "文件已存在"
+msgstr "文件已存在"
+
+msgid "目标文件名已存在，是否覆盖？"
+msgstr "目标文件名已存在，是否覆盖？"
+
+msgid "重命名成功"
+msgstr "重命名成功"
+
+msgid "重命名失败"
+msgstr "重命名失败"
+
+msgid "安装软件包"
+msgstr "安装软件包"
+
+msgid "此操作将安装系统软件包，确认继续？"
+msgstr "此操作将安装系统软件包，确认继续？"
+
+msgid "正在安装..."
+msgstr "正在安装..."
+
+msgid "安装中..."
+msgstr "安装中..."
+
+msgid "安装成功。如涉及界面更新，请手动刷新页面。"
+msgstr "安装成功。如涉及界面更新，请手动刷新页面。"
+
+msgid "安装失败，请检查系统日志。"
+msgstr "安装失败，请检查系统日志。"
+
+msgid "路径不存在"
+msgstr "路径不存在"
+
+msgid "导航"
+msgstr "导航"
+
+msgid "加载失败"
+msgstr "加载失败"
+
+msgid "大文件提示"
+msgstr "大文件提示"
+
+msgid "文件大小超过 10MB，预览可能较慢。是否继续预览？点击取消将直接下载。"
+msgstr "文件大小超过 10MB，预览可能较慢。是否继续预览？点击取消将直接下载。"
+
+msgid "弹窗被拦截"
+msgstr "弹窗被拦截"
+
+msgid "浏览器已拦截弹窗，请允许此网站弹出窗口后重试，或点击确认在新窗口打开。"
+msgstr "浏览器已拦截弹窗，请允许此网站弹出窗口后重试，或点击确认在新窗口打开。"
+
+msgid "预览"
+msgstr "预览"
+
+msgid "下载"
+msgstr "下载"
+
+msgid "当前路径不存在"
+msgstr "当前路径不存在"
+
+msgid "确定要删除"
+msgstr "确定要删除"
+
+msgid "无法访问路径"
+msgstr "无法访问路径"
+
+msgid "新建文件夹失败"
+msgstr "新建文件夹失败"
+
+msgid "删除失败，权限不足"
+msgstr "删除失败，权限不足"
+
+msgid "重命名失败，目录不存在"
+msgstr "重命名失败，目录不存在"
+
+msgid "安装 apk 失败"
+msgstr "安装 apk 失败"
+
+#: applications/luci-app-advanced/root/usr/share/luci/menu.d/luci-app-advanced.json
+msgid "高级设置"
+msgstr "高级设置"
+
+msgid "文件管理"
+msgstr "文件管理"

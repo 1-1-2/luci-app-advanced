@@ -1,13 +1,24 @@
 {
-  "admin/system/advanced": {
-    "title": "高级设置",
-    "order": 60,
-    "action": {
-      "type": "view",
-      "path": "advanced/settings"
-    },
-    "depends": {
-      "acl": ["luci-app-advanced"]
-    }
-  }
+	"admin/system/advanced": {
+		"title": "高级设置",
+		"order": 60,
+		"action": {
+			"type": "view",
+			"path": "luci-app-advanced/advanced"
+		},
+		"depends": {
+			"acl": ["luci-app-advanced"]
+		}
+	},
+	"admin/system/fileassistant": {
+		"title": "文件管理",
+		"order": 61,
+		"action": {
+			"type": "view",
+			"path": "luci-app-advanced/fileassistant"
+		},
+		"depends": {
+			"acl": ["luci-app-advanced"]
+		}
+	}
 }

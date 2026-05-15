@@ -1,46 +1,15 @@
 {
-  "luci-app-advanced": {
-    "description": "Grant access to LuCI advanced settings",
-    "read": {
-      "uci": ["advanced"],
-      "file": {
-        "/etc/dnsmasq.conf": ["read"],
-        "/etc/config/network": ["read"],
-        "/etc/config/wireless": ["read"],
-        "/etc/hosts": ["read"],
-        "/etc/config/firewall": ["read"],
-        "/etc/config/dhcp": ["read"],
-        "/etc/config/ddns": ["read"],
-        "/etc/config/smartdns": ["read"],
-        "/etc/config/openclash": ["read"],
-        "/etc/config/bypass": ["read"],
-        "/etc/config/arpbind": ["read"],
-        "/etc/config/parentcontrol": ["read"],
-        "/etc/config/autotimeset": ["read"],
-        "/etc/config/wolplus": ["read"],
-        "/etc/config/mwan3": ["read"]
-      }
-    },
-    "write": {
-      "uci": ["advanced"],
-      "file": {
-        "/etc/dnsmasq.conf": ["write"],
-        "/etc/config/network": ["write"],
-        "/etc/config/wireless": ["write"],
-        "/etc/hosts": ["write"],
-        "/etc/config/firewall": ["write"],
-        "/etc/config/dhcp": ["write"],
-        "/etc/config/ddns": ["write"],
-        "/etc/config/smartdns": ["write"],
-        "/etc/config/openclash": ["write"],
-        "/etc/config/bypass": ["write"],
-        "/etc/config/arpbind": ["write"],
-        "/etc/config/parentcontrol": ["write"],
-        "/etc/config/autotimeset": ["write"],
-        "/etc/config/wolplus": ["write"],
-        "/etc/config/mwan3": ["write"],
-        "/tmp/advanced_*.tmp": ["read", "write"]
-      }
-    }
-  }
+	"luci-app-advanced": {
+		"description": "Grant file access for Advanced",
+		"read": {
+			"ubus": {
+				"file": ["list", "read", "stat"]
+			}
+		},
+		"write": {
+			"ubus": {
+				"file": ["write", "remove", "exec"]
+			}
+		}
+	}
 }

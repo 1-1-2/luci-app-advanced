@@ -1,0 +1,381 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: applications/luci-app-advanced/htdocs/luci-static/resources/view/luci-app-advanced/common.js
+msgid "文件或目录不存在"
+msgstr ""
+
+msgid "权限不足，请检查 ACL 配置"
+msgstr ""
+
+msgid "磁盘空间不足"
+msgstr ""
+
+msgid "连接超时，请检查 rpcd 服务状态"
+msgstr ""
+
+msgid "目标是目录，需要文件"
+msgstr ""
+
+msgid "目标是文件，需要目录"
+msgstr ""
+
+msgid "目录不为空"
+msgstr ""
+
+msgid "未知错误"
+msgstr ""
+
+msgid "失败"
+msgstr ""
+
+msgid "确定"
+msgstr ""
+
+msgid "确认"
+msgstr ""
+
+msgid "取消"
+msgstr ""
+
+msgid "操作超时"
+msgstr ""
+
+#: applications/luci-app-advanced/htdocs/luci-static/resources/view/luci-app-advanced/advanced.js
+msgid "网络"
+msgstr ""
+
+msgid "无线"
+msgstr ""
+
+msgid "防火墙"
+msgstr ""
+
+msgid "DHCP"
+msgstr ""
+
+msgid "dnsmasq"
+msgstr ""
+
+msgid "hosts"
+msgstr ""
+
+msgid "ARP绑定"
+msgstr ""
+
+msgid "负载均衡"
+msgstr ""
+
+msgid "DDNS"
+msgstr ""
+
+msgid "家长控制"
+msgstr ""
+
+msgid "定时设置"
+msgstr ""
+
+msgid "网络唤醒"
+msgstr ""
+
+msgid "SMARTDNS"
+msgstr ""
+
+msgid "BYPASS"
+msgstr ""
+
+msgid "openclash"
+msgstr ""
+
+msgid "加载中"
+msgstr ""
+
+msgid "一致"
+msgstr ""
+
+msgid "不一致"
+msgstr ""
+
+msgid "异常"
+msgstr ""
+
+msgid "高级设置"
+msgstr ""
+
+msgid "注意：修改网络配置可能导致设备不可达，请确保了解所做更改的含义。"
+msgstr ""
+
+msgid "（此文件为空）"
+msgstr ""
+
+msgid "无法加载文件内容"
+msgstr ""
+
+msgid "重试"
+msgstr ""
+
+msgid "重试加载"
+msgstr ""
+
+msgid "此文件已被外部修改，你的本地修改与外部修改可能存在冲突。保存将覆盖外部修改，重置将丢弃你的本地修改。建议先复制你的修改内容到本地，然后点击[重置]加载最新文件，再手动合并你的修改。"
+msgstr ""
+
+msgid "此文件已被外部修改，点击[重置]加载最新内容"
+msgstr ""
+
+msgid "没有激活的标签页"
+msgstr ""
+
+msgid "找不到文本域"
+msgstr ""
+
+msgid "内容未变更，已跳过保存"
+msgstr ""
+
+msgid "文件不存在，无法保存"
+msgstr ""
+
+msgid "保存"
+msgstr ""
+
+msgid "保存成功。"
+msgstr ""
+
+msgid "保存成功，无需重启。"
+msgstr ""
+
+msgid "保存成功，服务已重启。"
+msgstr ""
+
+msgid "保存成功，但服务重启失败"
+msgstr ""
+
+msgid "保存成功，但服务重启超时或失败。"
+msgstr ""
+
+msgid "内容未变更，已跳过保存。"
+msgstr ""
+
+msgid "确认重置"
+msgstr ""
+
+msgid "重置将丢弃所有未保存的修改，确定继续？"
+msgstr ""
+
+msgid "已重置为服务器最新内容。"
+msgstr ""
+
+msgid "重置"
+msgstr ""
+
+#: applications/luci-app-advanced/htdocs/luci-static/resources/view/luci-app-advanced/fileassistant.js
+msgid "跳转"
+msgstr ""
+
+msgid "新建文件夹"
+msgstr ""
+
+msgid "上传"
+msgstr ""
+
+msgid "取消上传"
+msgstr ""
+
+msgid "删除"
+msgstr ""
+
+msgid "重命名"
+msgstr ""
+
+msgid "安装 apk"
+msgstr ""
+
+msgid "打开/预览"
+msgstr ""
+
+msgid "此目录为空"
+msgstr ""
+
+msgid "名称"
+msgstr ""
+
+msgid "大小"
+msgstr ""
+
+msgid "日期"
+msgstr ""
+
+msgid "权限"
+msgstr ""
+
+msgid "返回上级目录"
+msgstr ""
+
+msgid "第 "
+msgstr ""
+
+msgid " 页"
+msgstr ""
+
+msgid "上一页"
+msgstr ""
+
+msgid "下一页"
+msgstr ""
+
+msgid "此目录包含大量文件，部分功能可能响应较慢。"
+msgstr ""
+
+msgid "请输入文件夹名称"
+msgstr ""
+
+msgid "文件夹已创建"
+msgstr ""
+
+msgid "成功"
+msgstr ""
+
+msgid "不允许上传文件到系统关键目录"
+msgstr ""
+
+msgid "文件过大，已跳过"
+msgstr ""
+
+msgid "正在上传"
+msgstr ""
+
+msgid "上传成功"
+msgstr ""
+
+msgid "上传完成：成功 "
+msgstr ""
+
+msgid " 个，失败 "
+msgstr ""
+
+msgid " 个"
+msgstr ""
+
+msgid "上传已取消"
+msgstr ""
+
+msgid "确定要删除 "
+msgstr ""
+
+msgid " 吗？"
+msgstr ""
+
+msgid "此操作将递归删除目录内所有内容。"
+msgstr ""
+
+msgid " 个文件/目录吗？"
+msgstr ""
+
+msgid "个项目"
+msgstr ""
+
+msgid "确认删除"
+msgstr ""
+
+msgid "不允许删除此路径"
+msgstr ""
+
+msgid "已删除 "
+msgstr ""
+
+msgid " 个文件"
+msgstr ""
+
+msgid "删除失败"
+msgstr ""
+
+msgid "请输入新的文件名"
+msgstr ""
+
+msgid "文件名未变更"
+msgstr ""
+
+msgid "文件已存在"
+msgstr ""
+
+msgid "目标文件名已存在，是否覆盖？"
+msgstr ""
+
+msgid "重命名成功"
+msgstr ""
+
+msgid "重命名失败"
+msgstr ""
+
+msgid "安装软件包"
+msgstr ""
+
+msgid "此操作将安装系统软件包，确认继续？"
+msgstr ""
+
+msgid "正在安装..."
+msgstr ""
+
+msgid "安装中..."
+msgstr ""
+
+msgid "安装成功。如涉及界面更新，请手动刷新页面。"
+msgstr ""
+
+msgid "安装失败，请检查系统日志。"
+msgstr ""
+
+msgid "路径不存在"
+msgstr ""
+
+msgid "导航"
+msgstr ""
+
+msgid "加载失败"
+msgstr ""
+
+msgid "大文件提示"
+msgstr ""
+
+msgid "文件大小超过 10MB，预览可能较慢。是否继续预览？点击取消将直接下载。"
+msgstr ""
+
+msgid "弹窗被拦截"
+msgstr ""
+
+msgid "浏览器已拦截弹窗，请允许此网站弹出窗口后重试，或点击确认在新窗口打开。"
+msgstr ""
+
+msgid "预览"
+msgstr ""
+
+msgid "下载"
+msgstr ""
+
+msgid "当前路径不存在"
+msgstr ""
+
+msgid "确定要删除"
+msgstr ""
+
+msgid "无法访问路径"
+msgstr ""
+
+msgid "新建文件夹失败"
+msgstr ""
+
+msgid "删除失败，权限不足"
+msgstr ""
+
+msgid "重命名失败，目录不存在"
+msgstr ""
+
+msgid "安装 apk 失败"
+msgstr ""
+
+#: applications/luci-app-advanced/root/usr/share/luci/menu.d/luci-app-advanced.json
+msgid "高级设置"
+msgstr ""
+
+msgid "文件管理"
+msgstr ""
